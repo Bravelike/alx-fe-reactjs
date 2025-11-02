@@ -40,7 +40,7 @@ function App() {
       <UserProfile
         name="Alice"
         age="25"
-        bio = "SLoves hiking and photography"
+        bio = "Loves hiking and photography"
       />
     </>
   )
