@@ -33,7 +33,7 @@ function App() {
         Old Bravelike first react
       </p>
       <WelcomeMessage />
-      <Header/>
+      <Header />
       <MainContent />
       <Footer />
     </>
