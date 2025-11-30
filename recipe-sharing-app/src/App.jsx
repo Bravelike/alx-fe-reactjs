@@ -1,9 +1,9 @@
-import SearchBar from "../components/SearchBar";
-import RecipeList from "../components/RecipeList";
-import FavoritesList from "../components/FavoritesList";
-import RecommendationsList from "../components/RecommendationsList";
+import SearchBar from "./components/SearchBar";
+import RecipeList from "./components/RecipeList";
+import FavoritesList from "./components/FavoritesList";
+import RecommendationsList from "./components/RecommendationsList";
 
-const Dashboard = () => {
+const App = () => {
   return (
     <div>
       <SearchBar />
@@ -14,4 +14,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default App;

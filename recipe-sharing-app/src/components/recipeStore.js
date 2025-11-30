@@ -2,6 +2,26 @@ import { create } from "zustand";
 
 export const useRecipeStore = create((set, get) => ({
   recipes: [],
+  filteredRecipes: [],
+  searchTerm: "",
+
+  // ---- SEARCH ----
+  setSearchTerm: (term) => {
+    set({ searchTerm: term });
+    const { recipes } = get();
+    const filtered = recipes.filter((recipe) =>
+      recipe.title.toLowerCase().includes(term.toLowerCase()) ||
+      recipe.description.toLowerCase().includes(term.toLowerCase())
+    );
+    set({ filteredRecipes: filtered });
+  },
+
+  addRecipe: (recipe) => {
+    set((state) => ({
+      recipes: [...state.recipes, recipe],
+      filteredRecipes: [...state.filteredRecipes, recipe],
+    }));
+  },
 
   // ---- FAVORITES ----
   favorites: [],
