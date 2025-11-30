@@ -1,19 +1,38 @@
 function UserProfile() {
   return (
-    <div className="bg-gray-100 p-8 max-w-sm mx-auto my-20 rounded-lg shadow-lg text-center">
+    <div className="
+      bg-gray-100 
+      p-4 sm:p-4 md:p-8 
+      max-w-xs sm:max-w-xs md:max-w-sm 
+      mx-auto my-20 
+      rounded-lg shadow-lg 
+      text-center
+    ">
+      
       <img
-        src="data:image/jpeg;base64,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"
+        src="https://via.placeholder.com/150"
         alt="User"
-        className="w-36 h-36 rounded-full mx-auto"
+        className="
+          w-24 h-24 sm:w-24 sm:h-24 md:w-36 md:h-36 
+          rounded-full mx-auto
+        "
       />
 
-      <h1 className="text-xl text-blue-800 my-4">
+      <h1 className="
+        text-lg sm:text-lg md:text-xl 
+        text-blue-800 
+        my-4
+      ">
         John Doe
       </h1>
 
-      <p className="text-gray-600 text-base">
+      <p className="
+        text-sm sm:text-sm md:text-base 
+        text-gray-600
+      ">
         Developer at Example Co. Loves to write code and explore new technologies.
       </p>
+
     </div>
   );
 }
