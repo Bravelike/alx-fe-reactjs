@@ -2,15 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import HomePage from './components/Homepage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <div className="bg-purple-600 text-white p-4 text-xl">
-  Tailwind is working!
-</div>
+     <HomePage />
 
     </>
   )

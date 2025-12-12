@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "title": "Beef Stir Fry",
+    "summary": "Tender beef slices stir-fried with vegetables in a savory soy-ginger sauce.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "title": "Vegetable Lasagna",
+    "summary": "Layered pasta with creamy ricotta, spinach, zucchini, and rich tomato sauce.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 5,
+    "title": "Shrimp Fried Rice",
+    "summary": "A quick and flavorful Asian rice dish with shrimp, vegetables, and scrambled eggs.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 6,
+    "title": "Avocado Toast",
+    "summary": "Crispy toast topped with smashed avocado, chili flakes, and a squeeze of lemon.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 7,
+    "title": "Blueberry Pancakes",
+    "summary": "Fluffy pancakes filled with juicy blueberries and served with maple syrup.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 8,
+    "title": "Greek Salad",
+    "summary": "A refreshing salad with cucumber, tomatoes, olives, feta cheese, and olive oil.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 9,
+    "title": "BBQ Ribs",
+    "summary": "Tender pork ribs slow-cooked and glazed with a smoky barbecue sauce.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 10,
+    "title": "Chocolate Chip Cookies",
+    "summary": "Classic soft and chewy cookies packed with chocolate chips.",
+    "image": "https://via.placeholder.com/150"
+  }
+]
