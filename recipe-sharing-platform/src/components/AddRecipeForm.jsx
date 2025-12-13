@@ -4,37 +4,44 @@ const AddRecipeForm = () => {
   const [title, setTitle] = useState("");
   const [ingredients, setIngredients] = useState("");
   const [steps, setSteps] = useState("");
-  const [error, setError] = useState("");
+  const [errors, setErrors] = useState("");
+
+  const validate = () => {
+    if (!title || !ingredients || !steps) {
+      setErrors("All fields are required.");
+      return false;
+    }
+
+    const ingredientsList = ingredients
+      .split(",")
+      .map((item) => item.trim());
+
+    if (ingredientsList.length < 2) {
+      setErrors(
+        "Please enter at least two ingredients (comma separated)."
+      );
+      return false;
+    }
+
+    setErrors("");
+    return true;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic validation
-    if (!title || !ingredients || !steps) {
-      setError("All fields are required.");
+    if (!validate()) {
       return;
     }
 
-    const ingredientsList = ingredients.split(",").map(item => item.trim());
-
-    if (ingredientsList.length < 2) {
-      setError("Please enter at least two ingredients (comma separated).");
-      return;
-    }
-
-    // Clear error
-    setError("");
-
-    // New recipe object (for now just log it)
     const newRecipe = {
       title,
-      ingredients: ingredientsList,
-      steps: steps.split("\n")
+      ingredients: ingredients.split(",").map((item) => item.trim()),
+      steps: steps.split("\n"),
     };
 
     console.log("Recipe submitted:", newRecipe);
 
-    // Reset form
     setTitle("");
     setIngredients("");
     setSteps("");
@@ -50,8 +57,8 @@ const AddRecipeForm = () => {
         onSubmit={handleSubmit}
         className="bg-white shadow-md rounded-xl p-6 space-y-4"
       >
-        {error && (
-          <p className="text-red-600 text-sm">{error}</p>
+        {errors && (
+          <p className="text-red-600 text-sm">{errors}</p>
         )}
 
         <div>
